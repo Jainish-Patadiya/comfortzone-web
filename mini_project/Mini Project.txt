@@ -1,0 +1,63 @@
+ Mini Project
+===============
+
+ - Front-end
+    - Menu 1 ( Login / Signup )
+    - Menu 2 ( Home / Online Store / About Us / etc )
+    - Menu 3 ( Orthotics / Footwear / Podiatry / Footcare  ) - Product Categories
+        -Complete Rewards / Contact / Appointments ( pages )
+
+    - Cart 
+    - Checkout
+
+ - Admin Panel 
+    - Login
+    - Settings
+        - Logo Upload
+        - Website Title
+        - Footer Text
+    - Product Management
+        - Product Name
+        - Product Description ( TinyMCE )
+        - Product Category ( Dropdown with multi-select tree view )
+        - Product Price
+        - Product Image
+    - Category Management
+        - Category Name 
+        - Parent Category ( Dropdown tree view )
+    - Static pages
+        - Page Title
+        - Page Content ( TinyMCE )
+    - Menu Management
+        - Menu 1
+        - Menu 2
+        - Footer Navigation
+        - Help Resources
+    - Service Management
+        - service Title
+        - service details ( TinyMCE )
+    - Testimonials Management
+        - Testimonial Title
+        - Testimonial Content ( TinyMCE )
+        - Testimonial By ( textbox )
+    - User Management
+    - Order Management
+    - Contact US
+
+------------------------------------------------
+
+Database Tables
+-----------------
+01. users
+02. options
+    - site_logo 
+    - site_title
+    - footer_text
+03. menus
+04. static_pages
+05. products
+06. categories
+07. testimonials
+08. messages
+09. services
+10. orders
