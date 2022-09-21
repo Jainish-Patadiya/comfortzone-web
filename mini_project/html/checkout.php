@@ -22,7 +22,7 @@
 		<input type="number" name="number" placeholder="Phone Number" class="form-control" id="number"><br/><br>
 
         <textarea name="shipping_address"  onkeyup="return main_add()" placeholder="Billing Address" class="form-control" rows="5" id="shipping_add"></textarea><br><br>
-        <input type="checkbox" name="" style="margin: 10px 25px;" onchange="return billing_add()"> Same As Billing Address
+        <input type="checkbox" name="" style="margin: 10px 25px;" id="checked" onchange="return address_checked()"> Same As Billing Address
         <textarea name="billing_address"  placeholder="Shipping Address" class="form-control" rows="5" id="billing_add"></textarea><br><br>
         <select name="payment_method[]" class="form-control" id="payment">
             <option value="">--SELECT PAYMENT METHOD--</option>
@@ -38,18 +38,19 @@
 <script>
 
     function main_add(){
-        var address=document.getElementById('address').value;
+        var address=document.getElementById('billing_add').value;
     }
 
-    function billing_add(){
-        var read=document.getElementById('shipping_address').readOnly;
-            if (read === true) {
-                var read=document.getElementById('shipping_address').readOnly= false;
-            } else {
-                document.getElementById('shipping_address').innerHTML=document.getElementById('address').value;
-                var read=document.getElementById('shipping_address').readOnly= true;
+    function address_checked(){
+
+        if(document.getElementById('checked').checked==false){
+            var read=document.getElementById('billing_add').readOnly= false;
+        } else {
+                document.getElementById('billing_add').value=document.getElementById('shipping_add').value;
+                var read=document.getElementById('billing_add').readOnly= true;
             }
     }
+
 </script>
 
 <?php

@@ -134,8 +134,8 @@ function emailvalid() {
 
 function checkout() {
   let name = document.getElementById("name").value;
-  let b_add = document.getElementById("billing_add").innerHTML;
-  let s_add = document.getElementById("shipping_add").innerHTML;
+  let b_add = document.getElementById("billing_add").value;
+  let s_add = document.getElementById("shipping_add").value;
   let number = document.getElementById("number").value;
   let payment = document.getElementById("payment").value;
 
